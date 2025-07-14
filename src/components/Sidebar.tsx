@@ -45,9 +45,7 @@ const Sidebar = () => {
         <div className="p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            <div
-              className="w-10 h-10 rounded-lg flex items-center justify-center bg-black"
-            >
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-black">
               <span className="text-white font-bold text-lg">NK</span>
             </div>
             <span className="text-lg font-semibold">Nischal Kafle</span>
@@ -70,6 +68,18 @@ const Sidebar = () => {
                 <span>{item.label}</span>
               </button>
             ))}
+
+            {/* Blog Link */}
+            <a
+              href="https://nischalkafle-blog.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-colors hover:bg-cyan-300 text-white"
+              style={{ backgroundColor: "#111", marginTop: "1rem" }}
+            >
+              <FolderOpen size={18} />
+              <span>Blog</span>
+            </a>
           </nav>
         </div>
       </aside>
