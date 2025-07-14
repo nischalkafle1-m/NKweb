@@ -68,18 +68,6 @@ const Sidebar = () => {
                 <span>{item.label}</span>
               </button>
             ))}
-
-            {/* Blog Link */}
-            <a
-              href="https://nischalkafle-blog.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-colors hover:bg-cyan-300 text-white"
-              style={{ backgroundColor: "#111", marginTop: "1rem" }}
-            >
-              <FolderOpen size={18} />
-              <span>Blog</span>
-            </a>
           </nav>
         </div>
       </aside>
